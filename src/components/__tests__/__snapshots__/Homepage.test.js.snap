@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[` 1`] = `
+exports[`Homepage should match snapshot 1`] = `
 <div>
-  This will be the homepage!
+  Your homepage!
+  <Connect(ExpenseList) />
 </div>
 `;

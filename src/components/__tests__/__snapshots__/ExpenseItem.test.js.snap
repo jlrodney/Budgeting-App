@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Expense item should render correctly 1`] = `
+<div>
+  <h3>
+    Elictricity
+  </h3>
+  <p>
+    Amount: £
+    1.8
+     - Date: 
+    0
+  </p>
+</div>
+`;

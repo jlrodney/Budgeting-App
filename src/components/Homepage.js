@@ -1,9 +1,11 @@
 import React from 'react';
+import ExpenseList from './ExpenseList';
 
 
 const Homepage = () => (
   <div>
-    This will be the homepage!
+    Your homepage!
+    <ExpenseList />
   </div>
 );
 

@@ -17,4 +17,4 @@ describe('NotFoundPage should render  correctly', () => {
 describe('should render Header correctly', () => {
   const wrapper = shallow(<NotFoundPage />);
   expect(wrapper).toMatchSnapshot();
-  })
+})
