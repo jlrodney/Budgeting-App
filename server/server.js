@@ -4,7 +4,7 @@ const app = express();
 
 const buildPath = path.join(__dirname, '..', 'build')
 
-const port = provess.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.static(buildPath));
 
