@@ -2,7 +2,7 @@ import React from 'react';
 
 const HelpPage = () => (
   <div>
-    This is the help page
+    Please contact James Rodney with any problems at jlrodney95@gmail.com
   </div>
 );
 

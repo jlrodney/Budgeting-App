@@ -2,7 +2,7 @@
 
 exports[` 1`] = `
 <div>
-  404 - 
+  404 Page not found - 
   <Link
     replace={false}
     to="/"

@@ -4,12 +4,13 @@ import ExpenseItem from './ExpenseItem';
 
 export const ExpenseList = (props) => (
   <div>
+  <br/>
     {
       props.expenses.length === 0 ? (
         <p>No expenses</p>
       ) : (
           props.expenses.map((expense) => {
-            return <ExpenseItem key={expense.id} {...expense} />;
+            return <ExpenseItem key={expense.id} {...expense} onRemove={props.onRemove} />;
           })
         )
     }
@@ -21,5 +22,8 @@ const mapStateToProps = (state) => {
     expenses: state.expenses
   };
 };
+
+
+
 
 export default connect(mapStateToProps)(ExpenseList);

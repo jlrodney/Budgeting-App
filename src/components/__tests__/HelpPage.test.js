@@ -5,7 +5,7 @@ import HelpPage from '../HelpPage';
 describe('HelpPage should render  correctly', () => {
   it('should have a div', () => {
     const wrapper = shallow(<HelpPage />);
-    expect(wrapper.find('div').text()).toEqual("This is the help page");
+    expect(wrapper.find('div').text()).toEqual("Please contact James Rodney with any problems at jlrodney95@gmail.com");
   })
 });
 

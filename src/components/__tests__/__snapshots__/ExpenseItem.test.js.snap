@@ -2,14 +2,36 @@
 
 exports[`Expense item should render correctly 1`] = `
 <div>
-  <h3>
+  <h2>
     Elictricity
-  </h3>
-  <p>
+  </h2>
+  <span
+    className="data"
+  >
     Amount: £
     1.8
-     - Date: 
+     - Timestamp: 
     0
-  </p>
+  </span>
+  <span
+    className="edit-link"
+  >
+    <Link
+      replace={false}
+      to="/edit/1"
+    >
+      Edit
+    </Link>
+  </span>
+  <span
+    className="remove-link"
+  >
+    <Link
+      replace={false}
+      to="/remove/1"
+    >
+      Remove
+    </Link>
+  </span>
 </div>
 `;

@@ -6,7 +6,7 @@ import NotFoundPage from '../NotFoundPage';
 describe('NotFoundPage should render  correctly', () => {
   it('should have a div', () => {
     const wrapper = shallow(<NotFoundPage />);
-    expect(wrapper.find('div').text()).toEqual("404 - <Link />");
+    expect(wrapper.find('div').text()).toEqual("404 Page not found - <Link />");
   })
   it('should have a link to homepage', () => {
     const wrapper = shallow(<NotFoundPage />);

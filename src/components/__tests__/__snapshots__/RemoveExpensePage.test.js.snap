@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RemoveExpensePage should render RemoveExpensePage 1`] = `
+<div>
+  Are you sure you want to delete "
+  Elictricity
+  " expense
+  <button
+    onClick={[Function]}
+  >
+    Yes! Delete.
+  </button>
+</div>
+`;

@@ -373,13 +373,13 @@ exports[`Add expense form component should render form correctly with data 1`] =
       onChange={[Function]}
       placeholder="Description"
       type="text"
-      value=""
+      value="Elictricity"
     />
     <input
       onChange={[Function]}
       placeholder="Amount"
       type="text"
-      value=""
+      value="1.8"
     />
     <textarea
       onChange={[Function]}
