@@ -8,6 +8,7 @@
   "dependencies": {
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
+    "express": "^4.16.4",
     "moment": "^2.23.0",
     "node-sass": "^4.11.0",
     "raf": "^3.3.2",
@@ -25,11 +26,12 @@
     "semantic-ui-css": "^2.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server/server.js",
     "build": "react-scripts build",
     "test": "jest --coverage",
     "lint": "./node_modules/.bin/eslint --fix src",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
