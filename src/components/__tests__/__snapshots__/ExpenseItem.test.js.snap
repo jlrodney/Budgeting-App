@@ -9,9 +9,9 @@ exports[`Expense item should render correctly 1`] = `
     className="data"
   >
     Amount: £
-    1.8
-     - Timestamp: 
-    0
+    1.80
+     - Date: 
+    1st January 1970
   </span>
   <span
     className="edit-link"
