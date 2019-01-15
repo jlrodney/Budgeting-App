@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import moment from 'moment';
 
 const ExpenseItem = ({ id, description, amount, createdAt }) => (
-  <div>
+  <div className="individual-expense">
     <h2>{description}</h2>
     <span className="data">
     Amount: £{(amount/100).toFixed(2)} - Date: {moment(createdAt).format('Do MMMM YYYY')}

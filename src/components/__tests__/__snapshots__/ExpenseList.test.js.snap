@@ -2,15 +2,21 @@
 
 exports[`Expense list should render ExpenseList with empty message 1`] = `
 <div>
+  <h2>
+    Your expense list 
+  </h2>
   <br />
   <p>
-    No expenses
+    You have created no expenses
   </p>
 </div>
 `;
 
 exports[`Expense list should render ExpenseList with expenses 1`] = `
 <div>
+  <h2>
+    Your expense list 
+  </h2>
   <br />
   <ExpenseItem
     amount={180}

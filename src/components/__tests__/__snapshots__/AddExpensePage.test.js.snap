@@ -2,7 +2,9 @@
 
 exports[`Expense page should render AddExpensePage correctly 1`] = `
 <div>
-  <h1>
+  <h1
+    className="subheader"
+  >
     Add Expense
   </h1>
   <ExpenseForm

@@ -1,0 +1,14 @@
+.option {
+  display: flex;
+  justify-content: space-around;
+  padding: inherit;
+  padding-bottom: $m-size;
+}
+
+.option__text {
+  color: white;
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 0;
+  word-break: break-all;
+}

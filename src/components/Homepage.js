@@ -3,8 +3,7 @@ import ExpenseList from './ExpenseList';
 
 
 const Homepage = () => (
-  <div>
-    Your homepage!
+  <div className="expense-list">
     <ExpenseList />
   </div>
 );

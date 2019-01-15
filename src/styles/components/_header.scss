@@ -1,0 +1,36 @@
+.header {
+  background: $off-black;
+  color: white;
+  margin-right: $s-size;
+  margin-bottom: $s-size;
+  padding: $m-size 0;
+  font-size: $l-size;
+  text-indent: $s-size;
+}
+
+.expense-list {
+  text-indent: $s-size;
+}
+
+.subheader {
+  text-indent: $s-size;
+}
+
+.error {
+  text-align: center;
+  font-weight: bold;
+  color: darkred;
+}
+
+.individual-expense {
+  display: flex;
+  justify-content: flex-start;
+  vertical-align: center;
+}
+
+
+@media (min-width: $desktop-breakpoint) {
+  .header {
+    margin-bottom: $s-size;
+  }
+}

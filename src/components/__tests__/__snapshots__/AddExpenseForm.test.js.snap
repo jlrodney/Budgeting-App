@@ -1,24 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Add expense form component should render error for invalid form submission 1`] = `
-<div>
+<div
+  className="add-expense"
+>
   <form
+    className="form"
     onSubmit={[Function]}
   >
     <input
       autoFocus={true}
+      className="description"
       onChange={[Function]}
       placeholder="Description"
       type="text"
       value=""
     />
     <input
+      className="amount"
       onChange={[Function]}
       placeholder="Amount"
       type="text"
       value=""
     />
     <textarea
+      className="note"
       onChange={[Function]}
       placeholder="Add a note (optional)"
       value=""
@@ -113,7 +119,9 @@ exports[`Add expense form component should render error for invalid form submiss
       withPortal={false}
     />
     <br />
-    <button>
+    <button
+      className="button"
+    >
       Add Expense
     </button>
   </form>
@@ -121,27 +129,35 @@ exports[`Add expense form component should render error for invalid form submiss
 `;
 
 exports[`Add expense form component should render error for invalid form submission 2`] = `
-<div>
-  <p>
+<div
+  className="add-expense"
+>
+  <p
+    className="error"
+  >
     Please provide description and amount.
   </p>
   <form
+    className="form"
     onSubmit={[Function]}
   >
     <input
       autoFocus={true}
+      className="description"
       onChange={[Function]}
       placeholder="Description"
       type="text"
       value=""
     />
     <input
+      className="amount"
       onChange={[Function]}
       placeholder="Amount"
       type="text"
       value=""
     />
     <textarea
+      className="note"
       onChange={[Function]}
       placeholder="Add a note (optional)"
       value=""
@@ -236,7 +252,9 @@ exports[`Add expense form component should render error for invalid form submiss
       withPortal={false}
     />
     <br />
-    <button>
+    <button
+      className="button"
+    >
       Add Expense
     </button>
   </form>
@@ -244,24 +262,30 @@ exports[`Add expense form component should render error for invalid form submiss
 `;
 
 exports[`Add expense form component should render form 1`] = `
-<div>
+<div
+  className="add-expense"
+>
   <form
+    className="form"
     onSubmit={[Function]}
   >
     <input
       autoFocus={true}
+      className="description"
       onChange={[Function]}
       placeholder="Description"
       type="text"
       value=""
     />
     <input
+      className="amount"
       onChange={[Function]}
       placeholder="Amount"
       type="text"
       value=""
     />
     <textarea
+      className="note"
       onChange={[Function]}
       placeholder="Add a note (optional)"
       value=""
@@ -356,7 +380,9 @@ exports[`Add expense form component should render form 1`] = `
       withPortal={false}
     />
     <br />
-    <button>
+    <button
+      className="button"
+    >
       Add Expense
     </button>
   </form>
@@ -364,24 +390,30 @@ exports[`Add expense form component should render form 1`] = `
 `;
 
 exports[`Add expense form component should render form correctly with data 1`] = `
-<div>
+<div
+  className="add-expense"
+>
   <form
+    className="form"
     onSubmit={[Function]}
   >
     <input
       autoFocus={true}
+      className="description"
       onChange={[Function]}
       placeholder="Description"
       type="text"
       value="Elictricity"
     />
     <input
+      className="amount"
       onChange={[Function]}
       placeholder="Amount"
       type="text"
       value="1.8"
     />
     <textarea
+      className="note"
       onChange={[Function]}
       placeholder="Add a note (optional)"
       value=""
@@ -476,7 +508,9 @@ exports[`Add expense form component should render form correctly with data 1`] =
       withPortal={false}
     />
     <br />
-    <button>
+    <button
+      className="button"
+    >
       Add Expense
     </button>
   </form>

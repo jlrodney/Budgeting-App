@@ -2,34 +2,40 @@
 
 exports[` 1`] = `
 <header>
-  <h1>
+  <h1
+    className="header"
+  >
     Budgeting App
   </h1>
-  <NavLink
-    activeClassName="is-active"
-    aria-current="page"
-    className="home"
-    exact={true}
-    to="/"
+  <div
+    className="option"
   >
-    Homepage
-  </NavLink>
-  <NavLink
-    activeClassName="is-active"
-    aria-current="page"
-    className="create"
-    to="/create"
-  >
-    Create Expense
-  </NavLink>
-  <NavLink
-    activeClassName="is-active"
-    aria-current="page"
-    className="help"
-    exact={true}
-    to="/help"
-  >
-    Help
-  </NavLink>
+    <NavLink
+      activeClassName="is-active"
+      aria-current="page"
+      className="home"
+      exact={true}
+      to="/"
+    >
+      Homepage
+    </NavLink>
+    <NavLink
+      activeClassName="is-active"
+      aria-current="page"
+      className="create"
+      to="/create"
+    >
+      Create Expense
+    </NavLink>
+    <NavLink
+      activeClassName="is-active"
+      aria-current="page"
+      className="help"
+      exact={true}
+      to="/help"
+    >
+      Help
+    </NavLink>
+  </div>
 </header>
 `;
