@@ -1,6 +1,6 @@
 # Budgeting App
 
-This is an application where a user can input its expenses by providing a description, an amount, an optional note and a date. These expenses are then shown on the dashboard. 
+This is an application where a user can input its expenses by providing a description, an amount, an optional note and a date. These expenses are then shown on the dashboard and saved onto a database (firebase).
 
 ## Motivation 
 This project was undertaken as a learning exercise to improve my skills in React with Redux. 
@@ -9,8 +9,8 @@ This project was undertaken as a learning exercise to improve my skills in React
 This app is currently deployed at [https://budget-organiser.herokuapp.com/](https://budget-organiser.herokuapp.com/).
 
 ## Further Work
-- User login/authentication
-- Connecting the application to a database
+- User login/authentication so that each user only sees their own information.
+- Summary components of expenses.
 
 
 ## Tech
