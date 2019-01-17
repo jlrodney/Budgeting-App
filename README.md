@@ -1,6 +1,6 @@
 # Budgeting App
 
-This is an application where a user can input its expenses by providing a description, an amount, an optional note and a date. These expenses are then shown on the dashboard and saved onto a database (firebase).
+This is an application where a user can input its expenses by providing a description, an amount, an optional note and a date. These expenses are then shown on the dashboard and saved onto a database (firebase). This app is mobile friendly and should scale depending on the size of the screen. 
 
 ## Motivation 
 This project was undertaken as a learning exercise to improve my skills in React with Redux. 
