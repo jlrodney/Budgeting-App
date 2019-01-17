@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { RemoveExpensePage } from '../RemoveExpensePage';
 
-let removeExpense, history, wrapper;
+let startRemoveExpense, history, wrapper;
 const expenses = [{
   id: '1',
   description: 'Elictricity',
@@ -11,26 +11,26 @@ const expenses = [{
   createdAt: 0
 }]
 beforeEach(() => {
-  removeExpense = jest.fn();
+  startRemoveExpense = jest.fn();
   history = { push: jest.fn() };
   wrapper = shallow(
     <RemoveExpensePage
-      removeExpense={removeExpense}
+      startRemoveExpense={startRemoveExpense}
       history={history}
       expense={expenses[0]}
     />
   );
 });
 describe('RemoveExpensePage', () => {
-  test('should render RemoveExpensePage', () => {
+  it('should render RemoveExpensePage', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
 
-  test('should handle removeExpense', () => {
+  it('should handle startRemoveExpense', () => {
     wrapper.find('button').simulate('click');
     expect(history.push).toHaveBeenLastCalledWith('/');
-    expect(removeExpense).toHaveBeenLastCalledWith({
+    expect(startRemoveExpense).toHaveBeenLastCalledWith({
       id: expenses[0].id
     });
   });

@@ -6,9 +6,11 @@
   "author": "James Rodney <jlrodney95@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^6.2.0",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
     "express": "^4.16.4",
+    "firebase": "^5.7.3",
     "moment": "^2.23.0",
     "node-sass": "^4.11.0",
     "raf": "^3.3.2",
