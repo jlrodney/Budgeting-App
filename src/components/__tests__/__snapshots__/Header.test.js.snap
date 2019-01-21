@@ -14,8 +14,7 @@ exports[` 1`] = `
       activeClassName="is-active"
       aria-current="page"
       className="home"
-      exact={true}
-      to="/"
+      to="/homepage"
     >
       Homepage
     </NavLink>
@@ -36,6 +35,11 @@ exports[` 1`] = `
     >
       Help
     </NavLink>
+    <button
+      onClick={[Function]}
+    >
+      Logout
+    </button>
   </div>
 </header>
 `;

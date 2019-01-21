@@ -4,9 +4,10 @@ import ReactDOM from 'react-dom';
 import { startSetExpenses } from './actions/expenses';
 import { Provider } from 'react-redux';
 import configureStore from './store/configureStore';
-import AppRouter from './routers/AppRouter';
+import AppRouter, { history } from './routers/AppRouter';
+import {login, logout} from './actions/auth';
 import './styles/styles.scss';
-import './firebase/firebase';
+import { firebase} from './firebase/firebase';
 
 
 const store = configureStore();
@@ -17,9 +18,29 @@ const Root = () => (
     </Provider>
 );
 
+let hasRendered = false;
+
+const renderApp = () => {
+  if (!hasRendered) {
+    ReactDOM.render(<Root />, document.getElementById('root'));
+    hasRendered = true;
+  }
+}
 
 ReactDOM.render(<p>Loading...</p>, document.getElementById('root'));
 
-store.dispatch(startSetExpenses()).then(() => {
-  ReactDOM.render(<Root />, document.getElementById('root'));
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    store.dispatch(login(user.uid));
+    store.dispatch(startSetExpenses()).then(() => {
+      renderApp();
+      if (history.location.pathname === '/') {
+        history.push('/homepage')
+      }
+    })
+  } else {
+    store.dispatch(logout());
+    renderApp();
+    history.push('/');
+  }
 })
