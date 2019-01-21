@@ -1,20 +1,20 @@
 # Budgeting App
 
-This is an application where a user can input its expenses by providing a description, an amount, an optional note and a date. These expenses are then shown on the dashboard and saved onto a database (firebase). This app is mobile friendly and should scale depending on the size of the screen. 
+This is an application where a user can input its expenses by providing a description, an amount, an optional note and a date. These expenses are then shown on the dashboard and saved onto a database (firebase). This app is mobile friendly and should scale depending on the size of the screen.
 
-## Motivation 
-This project was undertaken as a learning exercise to improve my skills in React with Redux. 
+## Motivation
+This project was undertaken as a learning exercise to improve my skills in React with Redux.
 
 ## Build status
 This app is currently deployed at [https://budget-organiser.herokuapp.com/](https://budget-organiser.herokuapp.com/).
 
 ## Further Work
-- User login/authentication so that each user only sees their own information.
-- Summary components of expenses.
+- Summarise expenses (e.g. add a summarise component which summarises spending with respect to a timeframe or the number of 'large' expenses)
+- Analyse expenses (e.g. add an expense type field)
 
 
 ## Tech
-This application uses React with Redux and is tested using Jest and Enzyme. 
+This application uses React with Redux and is tested using Jest and Enzyme.
 
 ## Installation
 
@@ -38,6 +38,6 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm start` 
+### `npm start`
 
 Starts the server.
