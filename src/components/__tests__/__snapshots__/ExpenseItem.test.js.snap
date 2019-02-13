@@ -1,39 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Expense item should render correctly 1`] = `
-<div
-  className="individual-expense"
->
-  <h2>
+<div>
+  <h3
+    className="list-item__title"
+  >
     Elictricity
-  </h2>
-  <span
-    className="data"
+  </h3>
+  <div
+    className="list_item__body"
   >
-    Amount: £
-    1.80
-     - Date: 
-    1st January 1970
-  </span>
-  <span
-    className="edit-link"
-  >
-    <Link
-      replace={false}
-      to="/edit/1"
+    <span
+      className="list-item__sub-title"
     >
-      Edit
-    </Link>
-  </span>
-  <span
-    className="remove-link"
-  >
-    <Link
-      replace={false}
-      to="/remove/1"
+      January 1st, 1970
+    </span>
+    <span
+      className="list-item__data"
     >
-      Remove
-    </Link>
-  </span>
+      £
+      1.80
+    </span>
+    <span
+      className="edit-link"
+    >
+      <Link
+        replace={false}
+        to="/edit/1"
+      >
+        Edit
+      </Link>
+    </span>
+    <span
+      className="remove-link"
+    >
+      <Link
+        replace={false}
+        to="/remove/1"
+      >
+        Remove
+      </Link>
+    </span>
+  </div>
 </div>
 `;

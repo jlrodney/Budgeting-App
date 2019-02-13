@@ -4,6 +4,7 @@ export const addExpense = (expense) => ({
   type: 'ADD_EXPENSE',
   expense
 });
+
 export const startAddExpense = (expenseData = {}) => {
   return (dispatch, getState) => {
     const uid = getState().auth.uid;
@@ -23,6 +24,7 @@ export const startAddExpense = (expenseData = {}) => {
     });
   };
 };
+
 export const removeExpense = ({ id } = {} ) => ({
   type: 'REMOVE_EXPENSE',
   id

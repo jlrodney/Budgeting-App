@@ -2,7 +2,7 @@
 
 exports[`Add expense form component should render error for invalid form submission 1`] = `
 <div
-  className="add-expense"
+  className="form"
 >
   <form
     className="form"
@@ -130,10 +130,10 @@ exports[`Add expense form component should render error for invalid form submiss
 
 exports[`Add expense form component should render error for invalid form submission 2`] = `
 <div
-  className="add-expense"
+  className="form"
 >
   <p
-    className="error"
+    className="form__error"
   >
     Please provide description and amount.
   </p>
@@ -263,7 +263,7 @@ exports[`Add expense form component should render error for invalid form submiss
 
 exports[`Add expense form component should render form 1`] = `
 <div
-  className="add-expense"
+  className="form"
 >
   <form
     className="form"
@@ -391,7 +391,7 @@ exports[`Add expense form component should render form 1`] = `
 
 exports[`Add expense form component should render form correctly with data 1`] = `
 <div
-  className="add-expense"
+  className="form"
 >
   <form
     className="form"

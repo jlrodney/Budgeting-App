@@ -36,6 +36,7 @@ exports[` 1`] = `
       Help
     </NavLink>
     <button
+      className="button"
       onClick={[Function]}
     >
       Logout

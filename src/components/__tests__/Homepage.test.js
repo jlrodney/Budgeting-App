@@ -11,7 +11,7 @@ import Homepage from '../Homepage';
 describe('Homepage', () => {
   it('shoulf have a div with text', () => {
     const wrapper = shallow(<Homepage />);
-    expect(wrapper.find('div').text()).toEqual("<Connect(ExpenseList) />");
+    expect(wrapper.find('div').text()).toEqual("<Connect(ExpensesSummary) /><Connect(ExpenseListFilters) /><Connect(ExpenseList) />");
   })
   it('should match snapshot', () => {
     const wrapper = shallow(<Homepage />);

@@ -4,6 +4,8 @@ exports[`Homepage should match snapshot 1`] = `
 <div
   className="expense-list"
 >
+  <Connect(ExpensesSummary) />
+  <Connect(ExpenseListFilters) />
   <Connect(ExpenseList) />
 </div>
 `;
